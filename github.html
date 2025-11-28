@@ -1,0 +1,44 @@
+---
+layout: page
+title: GitHub
+---
+
+<script src="/js/github_analytics.js"></script>
+
+<div class="blurb">
+    <h1 style="margin-top:10px; margin-bottom:5px;">GitHub Analytics</h1>
+    <p style="text-align:justify" id="mediumspace">These charts represent daily webscrapped analytics for my <a href="https://github.io/tianjialiu" target="blank" id="underline_link">GitHub repositories</a> starting from August 2024. A chunk of data for the FIRECAM repository is missing and unrecoverable since GitHub only stores traffic data from the past 14 days.</p>
+
+    <p style="margin-bottom:2px;  margin-top:10px; font-size:20px; font-weight:600" class="black-text">Page Views</p>
+    <div id="chart-container-wrapper">
+        <div id="date-filters" style="margin-bottom: 1rem; display: flex; justify-content: flex-start; gap: 1rem; flex-wrap: wrap;">
+            <div style="display: flex; flex-direction: column; align-items: flex-start; padding: 0.5rem 0 0.5rem 0">
+                <label for="start-date" id="start-date-label">Start Date:</label>
+            </div>
+            <div style="display: flex; flex-direction: column; align-items: flex-start;">
+                <input type="date" id="start-date" style="padding: 0.5rem; border: 1px solid #d1d5db; border-radius: 0.25rem;">
+            </div>
+            <div style="display: flex; flex-direction: column; align-items: flex-start; padding: 0.5rem 0 0.5rem 0">
+                <label for="end-date" id="end-date-label">End Date:</label>
+            </div>
+            <div style="display: flex; flex-direction: column; align-items: flex-start;">
+                <input type="date" id="end-date" style="padding: 0.5rem; border: 1px solid #d1d5db; border-radius: 0.25rem;">
+            </div>
+            <button id="reset-dates-btn" style="margin-left: 0.5rem; padding: 0.5rem 0.75rem; background-color: white; color: black; border: 1.5px solid black; border-radius: 0.5rem; cursor: pointer; align-self: flex-end; font-size: 14px">Reset Date Range</button>
+        </div>
+        <div id="chart-section">
+            <canvas id="chart-canvas"></canvas>
+            <p class="loading-message">Loading chart data...</p>
+        </div>
+    </div>
+
+    <p style="margin-bottom:0px; margin-top:16px; font-size:20px; font-weight:600" class="black-text">Key Statistics</p>
+    <div id="table-container-wrapper">
+        <div id="table-section">
+            <p class="loading-message">Loading table data...</p>
+        </div>
+    </div>
+
+    <p class="last-space" style="margin-bottom:20px"></p>
+    
+</div>
