@@ -1,0 +1,180 @@
+---
+layout: page
+title: Projects
+---
+<div class="blurb">
+    
+    <h1 style="margin-top: 10px" id="smallspace">Current Projects</h1>
+    <p class="nav_banner" style="margin-top: 8px">Jump to: <a class="gray_border" href="#NorthAmerica">North America</a> | <a class="gray_border" href="#NWIndia">North India</a> | <a class="gray_border" href="#EQAS">Equatorial Asia</a> | <a class="gray_border" href="#GlobalFires">Global Fires</a></p>
+    
+    <div>
+        <div class="grid">
+            <div class="col-md-1">
+                <a name="NorthAmerica"></a>
+                <h2 style="font-size: 18px; margin-top: -2px">Wildfires and Smoke across North America</h2>
+                <p style="text-align:justify" id="mediumspace">Severe fire seasons in recent years have underscored the increasing vulnerability of the western United States and Canada to wildfires, which deteriorate public health, disrupt livelihoods, and damage infrastructure. Against the backdrop of a warming climate and recent droughts, the buildup of fuels from the legacy of federal active fire suppression in the 1900s led to larger and more severe wildfires in recent decades. In current work, we are tackling research on western U.S. wildfires on several fronts.</p>
+
+                <p style="margin-bottom: 0px"><i>I. Modeling the smoke burden from wildfires</i></p>
+                <p>Smoke from wildfires in North America are observed from surface monitors and satellites. For example, NOAA's Hazard Mapping System (HMS) smoke product contains polygons drawn by NOAA analysts who delineate smoke from non-smoke areas using primarily GOES satellite imagery. We found that wildfires in CA, OR, and WA in 2020 exacerbated short-term exposure to smoke particulate matter and the severity of COVID-19 pandemic (Zhou <i>et al.</i>, 2021). While the HMS smoke product is increasingly used in public health and air pollution studies, the dataset is subject to caveats. For example, HMS may indicate aloft smoke that does not affect surface air quality, particularly within polygons categorized as light density. To investigate how accurately HMS reflects surface conditions, we compared HMS with airport observations, monitor measurements, and model estimates (Liu <i>et al.</i>, 2024b). We also seek to quantify smoke impacts on public health, smoke risk, and smoke exposure mitigation from prescribed burning (Kelp <i>et al.</i>, 2023; 2025; Chung <i>et al.</i>, 2025), assess remote sensing datasets for estimating wildfire smoke burden (Schollaert <i>et al.</i>, 2025; VoPham <i>et al.</i>, 2025), and project climate change impacts on wildfires (Feng et al., 2025).</p>
+
+                <p style="margin-bottom: 0px"><i>II. Tracking wildfire progression using satellite observations</i></p>
+                <p>We developed the GOES-Observed Fire Event Representation (GOFER) algorithm using the GOES-East and GOES-West geostationary satellites to map the spatio-temporal progression of large wildfires on an hourly basis (Liu <i>et al.</i>, 2024a). In current work, we are investigating the meteorological and active fire suppression controls on fire spread in California and improving the GOFER algorithm by generalizing its applicability across western North America. In collaborations with UCI, NASA (EIS-Fire), and Natural Resources Canada (WildFireSat), we are contributing to the development of automated fire tracking algorithms with active fire observations from low-earth-orbit satellites (Orland <i>et al.</i>, 2025; Coffield <i>et al.</i>, 2026; Scholten <i>et al.</i>, 2026).</p>
+            
+                <p id="mediumspace"> <b>Publications:</b> <a id="underline_link" href="https://doi.org/10.1126/sciadv.abi8789" target="_blank">Zhou <i>et al.</i> (2021, <i>Sci. Adv.</i>)</a>, <a id="underline_link" href="https://doi.org/10.1029/2022EF003468" target="_blank">Kelp <i>et al.</i> (2023, <i>Earth's Future</i>)</a>, <a id="underline_link" href="https://doi.org/10.5194/essd-16-1395-2024" target="_blank">Liu <i>et al.</i> (2024a, <i>ESSD</i>)</a>, <a id="underline_link" href="https://doi.org/10.1071/WF23148" target="_blank">Liu <i>et al.</i> (2024b, <i>IJWF</i>)</a>, <a id="underline_link" href="https://doi.org/10.1029/2025AV001682" target="_blank">Kelp <i>et al.</i> (2025, <i>AGU Adv.</i>)</a>, <a id="underline_link" href="https://doi.org/10.1021/acs.est.5c01914" target="_blank">Chung <i>et al.</i> (2025, <i>ES&T</i>)</a>, <a id="underline_link" href="https://doi.org/10.1073/pnas.2421903122" target="_blank">Feng <i>et al.</i> (2025, <i>PNAS</i>)</a>, <a id="underline_link" href="https://doi.org/10.1016/j.canep.2025.102899" target="_blank">VoPham <i>et al.</i> (2025, <i>Cancer Epidemiol.</i>)</a>, <a id="underline_link" href="https://doi.org/10.1021/acs.estlett.5c00486" target="_blank">Schollaert <i>et al.</i> (2025, <i>ES&T Lett.</i>), <a id="underline_link" href="https://doi.org/10.1186/s42408-025-00407-x" target="_blank">Orland <i>et al.</i> (2025, <i>Fire Ecol.</i>)</a>, <a id="underline_link" href="https://doi.org/10.1016/j.rse.2025.115156" target="_blank">Coffield <i>et al.</i> (2026, <i>Remote Sens. Environ.</i>)</a>, <a id="underline_link" href="https://doi.org/10.1126/sciadv.adx6477" target="_blank">Scholten <i>et al.</i> (2026, <i>Sci. Adv.</i>)</a></p>
+
+                <p id="mediumspace"> <b>Datasets:</b> <a id="underline_link" href="https://doi.org/10.5281/zenodo.8327264" target="_blank">GOFER Product</a></p>
+
+                <p id="mediumspace"> <b>Earth Engine Apps:</b> <a id="underline_link" href="https://globalfires.earthengine.app/view/hms-smoke" target="_blank">HMS Smoke Explorer</a>, <a id="underline_link" href="https://globalfires.earthengine.app/view/gofer" target="_blank">GOFER Visualization</a>, <a id="underline_link" href="https://smoke-policy-tool.projects.earthengine.app/view/smrt-flames" target="_blank">SMRT-Flames Tool</a></p>
+
+                <p id="nospace"> <b>Links:</b> <a id="underline_link" href="https://www.ess.uci.edu/~uci-nasa-firetracking/" target="_blank">UCI-UBC-NASA Fire Tracking</a>, <a id="underline_link" href="https://natural-resources.canada.ca/forest-forestry/wildland-fires/wildfiresat-canadian-operational-mission" target="_blank">WildFireSat</a>, <a id="underline_link" href="https://firesmoke.ca" target="_blank">BlueSky Canada</a></p>
+            
+            </div>
+            <div class="col-md-2">
+                <p style="clear:left;">&nbsp;</p>
+                <img src="files/projects/creek_goes17.gif" class="img-popup">
+                <div id="modal-img" class="modal">
+                    <img class="modal-content">
+                    <span class="close">[x]</span>
+                </div>
+                <p id="caption"><small>Animation of active fire detections and smoke from the Creek Fire on September 5, 2020 as observed by the GOES-17 geostationary satellite. The Creek Fire ultimately burned 379,895 acres of land and destroyed over 850 structures.</small></p>
+            </div>
+        </div>
+    </div>
+
+    <h1 style="margin-top: 6px"></h1>
+    <div>
+        <div class="grid">
+            <div class="col-md-1">
+
+                <a name="NWIndia"></a>
+                <h2 style="font-size: 18px; margin-top: -2px">Agricultural Fires and Air Quality Degradation in Northwestern India</h2>
+                <p style="text-align:justify" id="mediumspace">In northwestern India, the double crop system alternates between the monsoon crop (kharif, predominantly rice) and winter crop (rabi, predominantly wheat). The short turnaround between harvest and sowing pressures farmers to quickly remove crop residue from the field to prepare for the next planting. In addition, the use of combine harvesters, which saves time and decreases labor costs, leaves behind abundant root-bound residues that are difficult to remove manually. The prevailing, cost-effective method is to burn the crop residues. However, crop residue burning releases a suite of pernicious gases and aerosols into the atmosphere that degrades both rural and urban air quality. Although crop residue burning is just one of many pollution sources, it is highly episodic and seasonal. Every year, the burning of rice residue from October to November contributes to thick haze and poor air quality over the region (Lan <i>et al.</i>, 2022). New Delhi, a mega-city already suffering from heavy local pollution, is located downwind of these seasonal agricultural fires. During the post-monsoon, meteorology (e.g. slow winds and temperature inversions) help trap pollutants near the surface in north India, increasing air pollution levels (Gautam <i>et al.</i>, 2023).</p>
+                
+                <p style="text-align:justify" id="mediumspace">We first used HYSPLIT atmospheric back trajectories to define Delhi's post-monsoon (October-November) and pre-monsoon (April-May) airsheds, or approximate regions where emissions can affect Delhi's local air pollution (Liu <i>et al.</i>, 2018a). Focusing on the post-monsoon burning season, we then used the STILT model to estimate the PM<sub>2.5</sub> enhancement in the Delhi National Capital Territory (Cusworth <i>et al.</i>, 2018). We also developed a fusion method using MODIS (500 m x 500 m) and Landsat (30 m x 30 m) imagery to approximate burned area; however, we find that moderate-resolution sensors, such as MODIS, are unable to see many small fires, therefore underestimating overall fire activity (Liu <i>et al.</i>, 2019). In a more recent approach, we used satellite and household survey data to build a new agricultural fire emissions inventory, <a id="underline_link" href="https://doi.org/10.7910/DVN/JUMXOL" target="_blank">SAGE-IGP</a>, for north India (Liu <i>et al.</i>, 2020b).</p>
+                
+                <p style="text-align:justify" id="mediumspace">North India faces dual challenges of severe groundwater depletion and air pollution. To alleviate groundwater depletion in Punjab and Haryana, the Preservation of Sub-Soil Water Act of 2009 delayed rice sowing dates to align the timing closer to the monsoon onset. However, this delay in the monsoon rice growing season has led to a delay in the post-monsoon fire season of around two weeks from 2003-2016 (Liu <i>et al.</i>, 2021a). Through atmospheric modeling of smoke PM<sub>2.5</sub> driven by SAGE-IGP fire emissions, we find that the delay in the post-monsoon fire season has consistently exacerbated poor air quality in nearby downwind areas, such as in New Delhi (Liu <i>et al.</i>, 2022). The unintended air pollution resulting from the cascading delays in the crop cycle and fire season suggests that future policies should consider groundwater depletion and smoke pollution as linked challenges.</p>
+            
+                <p id="mediumspace"><b>Publications:</b> <a id="underline_link" href="https://doi.org/10.1016/j.atmosenv.2017.10.024" target="_blank">Liu <i>et al.</i> (2018a, <i>Atmos. Environ.</i>)</a>, <a id="underline_link" href="https://doi.org/10.1088/1748-9326/aab303" target="_blank">Cusworth <i>et al.</i> (2018, <i>Environ. Res. Lett.</i>)</a>, <a id="underline_link" href="https://doi.org/10.1088/2515-7620/ab056c" target="_blank">Liu <i>et al.</i> (2019, <i>Environ. Res. Commun.</i>)</a>, <a id="underline_link" href="https://doi.org/10.1016/j.aeaoa.2020.100091" target="_blank">Liu <i>et al.</i> (2020b, <i>Atmos. Environ. X</i>)</a>, <a id="underline_link" href="https://doi.org/10.1088/1748-9326/abcc28" target="_blank">Liu <i>et al.</i> (2021a, <i>Environ. Res. Lett.</i>)</a>, <a id="underline_link" href="https://doi.org/10.1029/2022JD036790" target="_blank">Liu <i>et al.</i> (2022, <i>J. Geophys. Res. Atmos.</i>)</a>, <a id="underline_link" href="https://doi.org/10.1038/s41467-022-34093-z" target="_blank">Lan <i>et al.</i> (2022, <i>Nat. Commun.</i>)</a>, <a id="underline_link" href="https://doi.org/10.1029/2023GL103105" target="_blank">Gautam <i>et al.</i> (2023, <i>Geophys. Res. Lett.</i>)</a></p>
+
+                <p id="mediumspace"> <b>Datasets:</b> <a id="underline_link" href="https://doi.org/10.7910/DVN/JUMXOL" target="_blank">SAGE-IGP Inventory</a></p>
+
+                <p id="nospace"><b>Recorded Talks:</b> <a id="underline_link" href="https://youtu.be/LPyO3HOqjcQ" target="_blank">ACCESS XVII</a> (July 29, 2023)
+
+            </div>
+            <div class="col-md-2">
+                <p style="clear:left;">&nbsp;</p>
+                <img src="files/projects/punjab_ba.gif" class="img-popup">
+                <div id="modal-img" class="modal">
+                    <img class="modal-content">
+                    <span class="close">[x]</span>
+                </div>
+                <p id="caption"><small>Pre-burn (Oct 12, 2014) and post-burn (Oct 20, 2014) in western Punjab, India (DigitalGlobe, Google Earth)</small></p>
+                
+                <p style="clear:left;margin-top: -15px;">&nbsp;</p>
+                <img src="files/projects/smoke_fires_viirs_nov6_2016.jpg" class="img-popup">
+                <div id="modal-img" class="modal">
+                    <img class="modal-content">
+                    <span class="close">[x]</span>
+                </div>
+                <p id="caption"><small>Satellite observations of active fires and smoke from Suomi NPP/VIIRS over northwest India on November 6, 2016 (NASA Worldview)</small></p>
+            </div>
+        </div>
+    </div>
+    
+    <h1 style="margin-top: 6px"></h1>
+    <div>
+        <div class="grid">
+            <div class="col-md-1">
+                <a name="EQAS"></a>
+                <h2 style="font-size: 18px; margin-top: -2px">Modeling the Public Health Impacts of Fires in Equatorial Asia</h2>
+                <p style="text-align:justify" id="mediumspace">In strong El Niño years (typically very dry conditions), such as 2006 and 2015, fires associated with oil palm, timber, and logging plantations and deforestation in Indonesia lead to severe, persistent haze over Equatorial Asia from July to November. In part due to drought conditions associated with El Niño and the large area of fuel-rich peatlands, which contain partially decayed organic material, fires were able to persist and associated emissions exceeded yearly U.S. fossil fuel emissions on many days during the 2015 fire season (<a id="underline_link" href="http://www.wri.org/blog/2015/10/indonesia%E2%80%99s-fire-outbreaks-producing-more-daily-emissions-entire-us-economy" target="_blank">WRI</a>, <a id="underline_link" href="http://www.globalfiredata.org/updates.html#2015_indonesia" target="_blank">GFED</a>). Peat sequesters carbon in meters-deep layers accumulated over thousands of years; peat fires, then, reduce the ability of Indonesia to be a carbon sink. In past work, we developed a framework to rapidly estimate the public health impacts of the 2015 severe haze episode in Equatorial Asia. Overall, smoke exposure, weighted by population, more than doubled from the 2006 to 2015 severe haze events. Based on chemical transport modeling, fire emissions in the provinces of Jambi and South Sumatra and West and Central Kalimantan contributed to the bulk of population-weighted smoke exposure in Indonesia, Singapore, and Malaysia (Koplitz <i>et al.</i>, 2016). We then used Google Earth Engine to build the <a id="underline_link" href="https://smokepolicytool.users.earthengine.app/view/smoke-policy-tool" target="_blank">SMOKE Policy Tool</a>, which estimates the public health benefits of reducing fires in various land use scenarios, including peatland restoration (Marlier <i>et al.</i>, 2019). In more recent work, we find that using different global fire emissions inventories can significantly impact modeled estimates of smoke particulate matter, particularly in Equatorial Asia (Liu <i>et al.</i>, 2020a). To help end-users quickly compare five widely-used inventories and diagnose their underlying assumptions, we developed the <a id="underline_link" href="https://globalfires.earthengine.app/view/firecam" target="_blank">FIRECAM Tool</a> (Liu <i>et al.</i>, 2020a).</p>
+
+                <p id="mediumspace"><b>Publications:</b> <a id="underline_link" href="http://doi.org/10.1088/1748-9326/11/9/094023" target="_blank">Koplitz <i>et al.</i> (2016, <i>Environ. Res. Lett.</i>)</a>, <a id="underline_link" href="https://doi.org/10.1029/2019GH000191" target="_blank"> Marlier <i>et al.</i> (2019, <i>GeoHealth</i>)</a>, <a id="underline_link" href="https://doi.org/10.1016/j.rse.2019.111557" target="_blank">Liu <i>et al.</i> (2020a, <i>Remote Sens. Environ.</i>)</a>, <a id="underline_link" href="https://doi.org/10.1029/2024GH001014" target="_blank">Madrigano <i>et al.</i> (2024, <i>GeoHealth</i>)</a></p>
+
+                <p id="nospace"><b>Earth Engine Apps:</b> <a id="underline_link" href="https://smokepolicytool.users.earthengine.app/view/smoke-policy-tool" target="_blank">SMOKE Policy Tool</a>, <a id="underline_link" href="https://globalfires.earthengine.app/view/firecam" target="_blank">FIRECAM</a></p>
+                                
+            </div>
+            <div class="col-md-2">
+                <p style="clear:left;">&nbsp;</p>
+                <img src="files/projects/koplitz2016_smoke.jpeg" class="img-popup">
+                <div id="modal-img" class="modal">
+                    <img class="modal-content">
+                    <span class="close">[x]</span>
+                </div>
+                <p id="caption"><small>Population-weighted smoke exposure in Singapore, Indonesia, and Malaysia by contributing province (Koplitz <i>et al.</i>, 2016).</small></p>
+            </div>
+        </div>
+    </div>
+    
+    <h1 style="margin-top: 6px"></h1>
+    <div>
+        <div class="grid">
+            <div class="col-md-1">
+                <a name="GlobalFires"></a>
+                <h2 style="font-size: 18px; margin-top: -2px">Satellite Observations of Global Fire Activity: Trends, Implications, and Technical Challenges</h2>
+                <p style="text-align:justify" id="mediumspace">Satellites are an invaluable tool for observing, monitoring, and mapping global fire activity (<a id="underline_link" href="https://firms.modaps.eosdis.nasa.gov/map/" target="_blank">FIRMS</a>). Sensors such as MODIS, aboard the NASA's Terra and Aqua satellites, and VIIRS, aboard the S-NPP, NOAA-20, and NOAA-21 satellites, detect active fires on a daily and global scale by tracking thermal anomalies. Burned area can be mapped at high spatial resolution (10-30 m) using Landsat and Sentinel-2 imagery by comparing pre- and post-fire infrared signatures. Several technical challenges complicate interpretation of satellite-derived fire datasets, leading to biases in fire emissions estimates (Liu <i>et al.</i>, 2020a; 2020b; Whaley <i>et al.</i>, 2024; Parrington <i>et al.</i>, 2025). For example, clouds and thick haze can obscure fires from satellite detection, leading to missed active fires (Liu <i>et al.</i>, 2020b). Dark soil and cloud shadows make it challenging to separate burned from unburned areas (Liu <i>et al.</i>, 2019). Moreover, we find artificial discontinuities in MODIS burned area datasets due to the tile-dependent algorithms that process images in chunks for computational efficiency (Liu and Crowley, 2021; <a id="underline_link" href="https://globalfires.earthengine.app/view/ba-tiling" target="_blank">BA Tiling Explorer</a>).</p>
+
+                <p style="text-align:justify" id="mediumspace">Humans increasingly control fire ignition and spread through deforestation, agriculture, and forest management. However, more people than ever are living in the wildland-urban interface and thus vulnerable to destructive fires. Not only does fire shape ecosystems and landscapes, but it also impacts air quality, public health, and climate through emission of greenhouse gases and aerosols. Although it is important to quantify trends in the  magnitude of burned area, temporal shifts in the fire season add another dimension to the story. Following Liu <i>et al.</i> (2021a), we search globally for regions where the timing of the primary fire season has shifted, focusing on north Australia and southwest Russia (Liu <i>et al.</i>, 2021b). In these two regions, we find that humans altered the temporal distribution of fire activity through increased prescribed burning and potentially modernization in agricultural practices.</p>
+
+                <p id="mediumspace"><b>Publications:</b> <a id="underline_link" href="https://doi.org/10.1088/2515-7620/ab056c" target="_blank">Liu <i>et al.</i> (2019, <i>Environ. Res. Commun.</i>)</a>, <a id="underline_link" href="https://doi.org/10.1016/j.rse.2019.111557" target="_blank">Liu <i>et al.</i> (2020a, <i>Remote Sens. Environ.</i>)</a>, <a id="underline_link" href="https://doi.org/10.1016/j.aeaoa.2020.100091" target="_blank">Liu <i>et al.</i> (2020b, <i>Atmos. Environ. X</i>)</a>, <a id="underline_link" href="https://doi.org/10.1088/2633-1357/abd8e2" target="_blank"> Liu and Crowley (2021, <i>IOP SciNotes</i>)</a>, <a id="underline_link" href="https://doi.org/10.1088/1748-9326/abe328" target="_blank"> Liu <i>et al.</i> (2021b, <i>Environ. Res. Lett.</i>)</a>, <a id="underline_link" href="https://doi.org/10.5194/gmd-18-3265-2025" target="_blank"> Whaley <i>et al.</i> (2024, <i>GMD</i>)</a>, <a id="underline_link" href="https://doi.org/10.1525/elementa.2024.00089" target="_blank"> Parrington <i>et al.</i> (2025, <i>Elementa</i>)</a></p>
+                
+                <p id="nospace"><b>Earth Engine Apps:</b> <a id="underline_link" href="https://globalfires.earthengine.app/view/ba-tiling" target="_blank">Burned Area (BA) Tiling Explorer</a>, <a id="underline_link" href="https://globalfires.earthengine.app/view/firecam" target="_blank">FIRECAM</a></p>
+
+            </div>
+            <div class="col-md-2">
+                <p style="clear:left;">&nbsp;</p>
+                <img src="files/projects/liu2021_NAusFires.png" class="img-popup">
+                <div id="modal-img" class="modal">
+                    <img class="modal-content">
+                    <span class="close">[x]</span>
+                </div>
+                <p id="caption"><small>In north Australia, increased prescribed burning during the early dry season has reduced burned area during the fire-prone late dry season by creating a patchwork of burned and unburned areas (Liu <i>et al.</i>, 2021b).  Reducing distances between fuel-limited burned areas limits fire spread in the late dry season.</small></p>
+            </div>
+        </div>
+    </div>
+
+    <h1 style="margin-top: 30px" id = "smallspace">Past Projects</h1>
+    <p class="nav_banner" style="margin-top: 8px">Jump to: <a class="gray_border" href="#SSS">Salinity & Rainfall</a> | <a class="gray_border" href="#Paleoclimate">Paleoclimate</a></p>
+
+    <div>
+        <div class="grid">
+            <div class="col-md-1">
+                <a name="SSS"></a>
+                <h2 style="font-size: 18px; margin-top: -2px">Global Search for Sea Surface Salinity Predictors of Regional Rainfall Patterns</h2>
+                <p style="text-align:justify" id = "mediumspace">The global ocean makes up the bulk of the global water cycle, and is the ultimate source of all rainfall, implying that changes in the ocean affect rainfall patterns on land. Traditionally, seasonal to decadal sea surface temperature (SST)-based patterns have been linked to variations in rainfall over land. However, the salinity of the surface ocean is directly responsive to changes in evaporation and precipitation. We find that abnormally salty (more evaporation) or fresh (more precipitation) patches of the ocean can be used to predict rainfall on land one season ahead. Specifically, we looked globally for changes in autumn sea surface salinity (SSS) that correspond well with variations in winter precipitation in the southwestern United States to build a SSS-based model. We find that the SSS-based model outperforms the SST-based model. Thus, incorporating SSS into existing frameworks for predicting seasonal rainfall on land can improve forecasts needed for allocating water resources ahead of abnormally dry or wet seasons.</p>
+                 
+                <p id="nospace"><b>Publications:</b> <a id="underline_link" href="https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/2018GL079293" target="_blank"> Liu <i>et al.</i> (2018b, <i>Geophys. Res. Lett.</i>)</a> </p>
+               
+            </div>
+
+            <div class="col-md-2">
+                <p style="clear:left;">&nbsp;</p>
+                <img src="files/projects/liu2018_SSScor.jpg" class="img-popup">
+                <div id="modal-img" class="modal">
+                    <img class="modal-content">
+                    <span class="close">[x]</span>
+                </div>
+                <p id="caption"><small>Correlation of autumn sea surface salinity with winter precipitation in southwestern United States and identified SSS predictors (Liu <i>et al.</i>, 2018)</small></p>
+            </div>
+        </div>
+    </div>
+
+    <a name="Paleoclimate"></a>
+    <h2 style="font-size: 18px; margin-top: 22px" id = "smallspace">Glacial-Interglacial Variability in the Strength of the North Pacific Biological Pump</h2>
+    <p id="nospace">
+    <b>Liu T.</b>, J.F. McManus, K. Costa, and T. Liu. A glacial-interglacial record of the North Pacific biological pump for the past 600,000 years. Ocean Sciences Meeting, New Orleans, LA, February 23, 2016. (<a id="underline_link" href="https://agu.confex.com/agu/os16/meetingapp.cgi/Paper/87081" target="_blank">abstract</a>)
+    </p>
+    
+    <h2 style="font-size: 18px; margin-top: 22px" id = "smallspace">A Multi-Proxy Record of Paleovegetation and Paleoclimate from Middleton Island, Alaska</h2>
+    <p id="smallspace">
+    <b>Liu T.</b>, J.E. Nichols, D.M. Peteet, C.M. Moy, J. Crusius, and A.W. Schroth. Leaf wax <i>n</i>-alkane distributions, stable isotope ratios, paleovegetation, and dust flux to reconstruct North Pacific climate during the last 2,000 years. American Geophysical Union Fall Meeting, San Francisco, CA, December 18, 2014. (<a id="underline_link" href="https://agu.confex.com/agu/fm14/meetingapp.cgi/Paper/28528" target="_blank">abstract</a>)
+    </p>
+    <p class="last-space" style="margin-bottom: 20px"></p>
+</div>
+
+<script>
+    var nImg = document.getElementsByClassName("img-popup").length;
+    for (var img_id = 0; img_id < nImg; img_id++) {
+        active_modal(img_id)
+    }
+</script>
