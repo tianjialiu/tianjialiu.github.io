@@ -1,0 +1,49 @@
+---
+layout: page
+title: Datasets
+---
+<div class="blurb">
+    <h1 style="margin-top: 10px; margin-bottom: 5px;">Datasets</h1>
+
+    <div style="font-size:0;">
+        <p style="margin-top:5px; margin-bottom:10px; line-height: 1.7">Jump to: <a class="gray_border" href="#gofer">GOFER</a> | <a class="gray_border" href="#sageigp">SAGE-IGP</a></p>
+        <hr color="#999" size="1" style="margin-bottom:0px"></hr>
+    </div>
+
+    <div>
+        <div class="grid">
+            <div class="col-md-1">
+                <a name="gofer"></a>
+                <p style="clear:left; padding:0; margin:0">&nbsp;</p>
+                <img src="files/datasets/GOFER_Creek2020.png" class="img-popup">
+                <p id="caption"><small>Comparison of the 2020 Creek Fire progression from GOES-Observed Fire Event Representation (GOFER: hourly, 2-km active fires) and Fire Event Data Suite (FEDS: 12-hourly, 375-m active fires). The final perimeters from GOFER and FEDS are compared to the high-resolution final perimeter from CAL FIRE's Fire and Resource Assessment Program (FRAP).</small></p>
+            </div>
+            <div class="col-md-2">
+                <p style="clear:left; padding:0;margin:0">&nbsp;</p>
+                <p style="margin-top:-2px; margin-bottom:6px; font-size:26px"><a name="gofer"></a><a class="black-text" style="font-weight: 600">GOFER</a></p>
+                <p style="margin-bottom:3px; font-size:18px">GOES-Observed Fire Event Representation</p>
+                <p style="margin-bottom:8px; padding-top:0px"><a href="https://doi.org/10.5194/essd-16-1395-2024" target="blank" class="blue-link-button">[Paper]</a> <a href="https://doi.org/10.5281/zenodo.8327264" target="blank" class="blue-link-button">[Dataset]</a> <a href="hhttps://github.com/tianjialiu/GOFER" target="blank" class="blue-link-button">[Code]</a> <a href="https://globalfires.earthengine.app/view/gofer" target="blank" class="blue-link-button">[App]</a></p>
+                <p style="text-align:justify" id="mediumspace">The GOFER algorithm uses geostationary active fire observations from GOES-East and GOES-West (2 km at the equator) to map the hourly spatio-temporal evolution of large wildfires. Previous efforts in fire event tracking mainly relied on 12-hourly observations from VIIRS or MODIS, sensors aboard low-earth-orbit satellites. Critically, GOFER resolves the diurnal cycle of fire growth and periods of extreme fire growth. The GOFER product currently includes hourly perimeters, active fire lines, and fire spread rates for 28 wildfires over 50,000 acres from 2019-2021 in California. For all of our fire tracking datasets, please visit the <a href="https://www.ess.uci.edu/~uci-nasa-firetracking/" target="blank" id="underline_link">UCI</a> and <a href="https://earth-information-system.github.io/fireatlas/docs/data_overview.html#published-datasets" target="blank" id="underline_link">NASA EIS</a> websites.</p>
+            </div>
+        </div>
+        <hr width="50%" class="black-text" style="margin-top:10px; margin-bottom:0px"></hr>
+        <div class="grid">
+            <div class="col-md-1">
+                <a name="gofer"></a>
+                <p style="clear:left; padding:0; margin:0">&nbsp;</p>
+                <img src="files/datasets/SAGE-IGP_overview.png" class="img-popup">
+                <p id="caption"><small>Dry matter burned from post-monsoon agricultural fires, averaged across 2003-2018, in north India from the SAGE-IGP fire emissions inventory.</small></p>
+            </div>
+            <div class="col-md-2">
+                <p style="clear:left; padding:0;margin:0">&nbsp;</p>
+                <p style="margin-top:-2px; margin-bottom:8px; font-size:26px"><a name="sageigp"></a><a class="black-text" style="font-weight: 600">SAGE-IGP</a></p>
+                <p style="margin-bottom:3px; font-size:18px">Survey Constraints on FRP-based AGricultural Fire Emissions in the Indo-Gangetic Plain</p>
+                <p style="margin-bottom:6px; padding-top:0px"><a href="https://doi.org/10.1016/j.aeaoa.2020.100091" target="blank" class="blue-link-button">[Paper]</a> <a href="https://doi.org/10.7910/DVN/JUMXOL" target="blank" class="blue-link-button">[Dataset]</a> <a href="https://github.com/tianjialiu/SAGE-IGP" target="blank" class="blue-link-button">[Code]</a></p>
+                <p style="text-align:justify" id="mediumspace">The SAGE-IGP algorithm combines household survey and satellite data to constrain post-monsoon agricultural fire emissions over north India from 2003-2018. SAGE-IGP addresses challenges such as missed fire detections due to persistent cloud/thick haze cover and burning outside of the satellite overpass times. Global fire emissions inventories can differ by an order of magnitude in this region. SAGE-IGP can be used as input in chemical transport models to evaluate air quality impacts from agricultural burning, which is an important seasonal source of pollution, and outperforms global inventories when the modeled PM<sub>2.5</sub> estimates are compared against surface PM<sub>2.5</sub> observations.</p>
+            </div>
+        </div>
+    </div>
+    
+    <p class="last-space" style="margin-bottom: 20px"></p>
+    
+</div>
