@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{{ page.title }}</title>
+        
+        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Nunito"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="/css/main.css">
+
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/moment@2.29.1/moment.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-moment@1.0.0/dist/chartjs-adapter-moment.min.js"></script>
+
+        <script src="/js/sticky_sidebar.js"></script>
+        <script src="/js/dark_mode.js"></script>
+        <script src="/js/scroll_to_top.js"></script>
+        <script src="/js/modal.js"></script>
+
+        {% if jekyll.environment == 'production' %}
+            <script> (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                 m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                 })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+                 
+                 ga('create', 'UA-49948076-2', 'auto');
+                 ga('require', 'ipMeta', {
+                       apiKey: 'a36d7cd3e5792d6a4c11192920795a291a30819edecffee1e9ffe804382579bf',
+                       serviceProvider: 'dimension2',
+                       networkDomain: 'dimension3',
+                       networkType: 'dimension4'
+                   });
+                   ga('ipMeta:loadNetworkFields');
+                   ga('send', 'pageview');
+            </script>
+
+            <!-- Google Tag Manager -->
+            <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-WHWCP9T8');</script>
+            <!-- End Google Tag Manager -->
+
+            <!-- Google tag (gtag.js) -->
+            <script async src="https://www.googletagmanager.com/gtag/js?id=G-VTC96YRN06"></script>
+            <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+
+            gtag('config', 'G-VTC96YRN06');
+            </script>
+
+            <script async src="https://ipmeta.io/plugin.js"></script>
+        {% endif %}
+        
+        <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+        <link rel="manifest" href="favicon/site.webmanifest">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    </head>
+    
+    <body>
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WHWCP9T8"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <!-- End Google Tag Manager (noscript) -->
+        <nav>
+            <sitetitle><a class="black-text" href="/">Tianjia Liu</a></sitetitle>
+
+            <ul id="showMenu">
+                <li><a href="news">News</a></li>
+                <li>Research <i class="fa fa-caret-down"></i>
+                    <ul id="hiddenMenu" style="display: none; z-index:99">
+                        <li><a href="projects">Projects</a></li>
+                        <li><a href="datasets">Datasets</a></li>
+                        <li><a href="apps">Apps</a></li>
+                        <li><a href="presentations">Presentations</a></li>
+                        <li><a href="resources">Resources</a></li>
+                        <li><a href="github">GitHub</a></li>
+                    </ul>
+                </li>
+                <li style="z-index:0"><a href="publications">Publications</a></li>
+                <li style="z-index:0"><a href="embrs">EMBRS Lab</a></li>
+                <li style="z-index:0"><a href="files/cv/LiuTianjia_CV.pdf">CV</a></li>
+                <button style="border: none; outline:none; background-color: transparent" onclick="toggleLightDarkButton(); toggleLightDark()" id='lightDarkMode'>🌖</button>
+            </ul>
+
+            <script>
+                var hidden = true;
+                document.getElementById('showMenu').onclick = function() {
+                    document.getElementById('hiddenMenu').style.display = (hidden) ? 'block' : 'none';
+                    hidden = !hidden;
+                };
+
+                window.onscroll = function() {
+                  scrollButtonShow();
+                };
+            </script>
+
+            <button onclick="scrollToTop();" id="scrollTopButton" title="Go to top"> ⧋ </button>
+
+            <div class="container">
+            
+                {{ content }}
+            
+            </div>
+        </nav>
+        
+        
+        <footer>
+            <ul>
+                <a class="social-link" href="files/cv/LiuTianjia_CV.pdf" target="_blank">
+                    <div class="social-container">
+                        <img src="img/icon.cv.svg" style="height: 30px; margin-right: 3px" class="social-icon">
+                        <p class="social-footer">CV</p>
+                    </div>
+                </a>
+                <a class="social-link" href="https://scholar.google.com/citations?hl=en&user=E9zE0EcAAAAJ&view_op=list_works" target="_blank">
+                    <div class="social-container">
+                        <img src="img/icon.googlescholar.svg" style="height: 30px" class="social-icon">
+                        <p class="social-footer">Scholar</p>
+                    </div>
+                </a>
+                <a class="social-link" href="https://www.linkedin.com/in/tianjialiu/" target="_blank">
+                    <div class="social-container">
+                        <img src="img/icon.linkedin.svg" style="margin-left: -6px" class="social-icon">
+                        <p class="social-footer">LinkedIn</p>
+                    </div>
+                </a>
+                <a class="social-link" href="https://www.researchgate.net/profile/Tianjia-Liu" target="_blank">
+                    <div class="social-container">
+                        <img src="img/icon.researchgate.png" style="margin-left: 14px" class="social-icon">
+                        <p class="social-footer">ResearchGate</p>
+                    </div>
+                </a>
+                <a class="social-link" href="https://github.com/tianjialiu" target="_blank">
+                    <div class="social-container">
+                        <img src="img/icon.github.svg" fallbacksrc="img/icon.github.png" class="social-icon">
+                        <p class="social-footer">GitHub</p>
+                    </div>
+                    
+                </a>
+                <a class="social-link" href="https://bsky.app/profile/tinaliu.bsky.social" target="_blank">
+                    <div class="social-container">
+                        <img src="img/icon.bluesky.svg" style="height: 32px;" class="social-icon">
+                        <p class="social-footer">Bluesky</p>
+                    </div>
+                </a>
+                <a class="social-link" href="https://youtube.com/@tianjialiu" target="_blank">
+                    <div class="social-container">
+                        <img src="img/icon.youtube.svg" style="height: 25px; margin-left: -4px; margin-top: 3px" class="social-icon">
+                        <p class="social-footer">YouTube</p>
+                    </div>
+                </a>
+                <a class="social-link" href="https://www.flickr.com/photos/tinaliu517/" target="_blank">
+                    <div class="social-container">
+                        <img src="img/icon.flickr.svg" style="height: 35px; margin-left: -10px; margin-bottom: 2px" class="social-icon">
+                        <p class="social-footer">Flickr</p>
+                    </div>
+                </a>
+                <a class="social-link" href="files/poetry/Liu_Tianjia_Poetry.pdf" target="_blank">
+                    <div class="social-container">
+                        <img src="img/icon.poetry.svg" style="height: 35px; margin-left: -10px; margin-bottom: 2px" class="social-icon">
+                        <p class="social-footer">Poetry</p>
+                    </div>
+                </a>
+                <a class="social-link" href="mailto:tianjia.liu@ubc.ca">
+                    <div class="social-container">
+                        <img src="img/icon.email.png" fallbacksrc="img/icon.email.png" style=
+                            "margin-left: -10px; margin-bottom: -14px" class="social-icon">
+                        <p class="social-footer">Email</p>
+                    </div>
+                </a>
+            </ul>
+            <p style="text-align:center; margin-top: -10px">© Tianjia Liu 2014-2026 <a href="https://github.com/tianjialiu/tianjialiu.github.io" target="_blank">🔥</a></p>
+        </footer>
+    </body>
+
+    <script>
+        var buttonState = '🌖'
+        if (sessionStorage.getItem('buttonState') !== null & sessionStorage.getItem('buttonState') !== undefined) {
+            buttonState = sessionStorage.getItem('buttonState');
+        }
+
+        if (buttonState == '🌒') {
+            var button = document.getElementById("lightDarkMode");
+            button.innerHTML = '🌒';
+            toggleLightDark();
+        }
+    </script>
+
+</html>
